@@ -129,14 +129,14 @@ address.
 {% assign online = "false" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
-{% <p id="where">
+<p id="where">
   <strong>Where:</strong>
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
-</p>%}
+</p>
 {% elsif online == "true_public" %}
 <p id="where">
   <strong>Where:</strong>
